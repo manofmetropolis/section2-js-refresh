@@ -42,7 +42,7 @@ checkLength(thisWord);
 
 // Functions (again)
 function createGreeting(userName, message = "How are you?") {
-  return "Hi, I am " + userName + ". " + message;
+  return "Hey, I am " + userName + ". " + message;
 }
 
 const greeting1 = createGreeting("Devin");
@@ -58,11 +58,7 @@ function getDifference(value) {
     return;
   }
   console.log(
-    "You only have " +
-      value +
-      " credits. You need " +
-      difference +
-      " more credits.",
+    `You only have ${value} credits. You need ${10 - value} more credits.`,
   );
 }
 
