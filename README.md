@@ -18,5 +18,5 @@ Section 2: Udemy JS Refresher Course
 - The could would not be optimized (a.k.a. minified)
 - You need node to run React projects.
 
-# Exports
+# Imports/Exports
 - Export default is often used when a whole function is created and needs to be used elsewhere. Most files are single components, so the entire thing can be exported via default.
