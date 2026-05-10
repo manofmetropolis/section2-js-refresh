@@ -140,12 +140,12 @@
 // console.log(lastName);
 
 // For objects:
-const {name, age} = {
-    name: 'Rob',
-    age: 43
-};
+// const {name, age} = {
+//     name: 'Rob',
+//     age: 43
+// };
 
-console.log(name, age);
+// console.log(name, age);
 
 // const name = user.name;
 // const age = user.age;
@@ -190,31 +190,42 @@ console.log(name, age);
 
 // Control Structures: For Loops
 //Execute multipe times for each item.
-const heroes = ['Superman', 'Batman', 'Wonder Woman', 'Green Lantern', 'Flash', 'Martian Manhunter']
+// const heroes = ['Superman', 'Batman', 'Wonder Woman', 'Green Lantern', 'Flash', 'Martian Manhunter']
 
-for (const hero of heroes) { // Create a new element for each of the items in the array, and call each one by this name.
-    console.log(hero);
-}
+// for (const hero of heroes) { // Create a new element for each of the items in the array, and call each one by this name.
+//     console.log(hero);
+// }
 
 // Functions as Values
 // How to pass functions to other functions as values
 
-function handleTimeout() {
-    console.log('Timed out!');
+// function handleTimeout() {
+//     console.log('Timed out!');
+// }
+
+// const handleTimeout2 = () => {
+//     console.log('Timed out again.');
+// }
+
+// setTimeout(handleTimeout, 2000); // Params are function and time in message
+// setTimeout(handleTimeout2, 3000);
+// setTimeout(() => {
+//     console.log('Long time out');
+// }, 4000);
+
+// function greeter(greetFn) {
+//     greetFn();
+// }
+
+// greeter(() => console.log('Hi'));
+
+// Define functions inside functions
+function init() {
+    function greet() {
+        console.log('Something');
+    }
+
+    greet(); //Cannot exec this function outside of init function.
 }
 
-const handleTimeout2 = () => {
-    console.log('Timed out again.');
-}
-
-setTimeout(handleTimeout, 2000); // Params are function and time in message
-setTimeout(handleTimeout2, 3000);
-setTimeout(() => {
-    console.log('Long time out');
-}, 4000);
-
-function greeter(greetFn) {
-    greetFn();
-}
-
-greeter(() => console.log('Hi'));
+init();
