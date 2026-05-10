@@ -171,19 +171,27 @@ console.log(name, age);
 // }
 // console.log(extendedUser);
 
-// Control Structures
-if (10 === 10) {
-    console.log('Equal');
-} else {
-    console.log('Not equal');
-}
+// Control Structures: IF
+// if (10 === 10) {
+//     console.log('Equal');
+// } else {
+//     console.log('Not equal');
+// }
 
-const password = prompt('Your password');
+// const password = prompt('Your password');
 
-if (password === 'Superman') {
-    console.log('Welcome')
-} else if (password === 'Luthor') {
-    console.log('Get Out!')
-} else {
-    console.log('Nothing to see here.')
+// if (password === 'Superman') {
+//     console.log('Welcome')
+// } else if (password === 'Luthor') {
+//     console.log('Get Out!')
+// } else {
+//     console.log('Nothing to see here.')
+// }
+
+// Control Structures: For Loops
+//Execute multipe times for each item.
+const heroes = ['Superman', 'Batman', 'Wonder Woman', 'Green Lantern', 'Flash', 'Martian Manhunter']
+
+for (const hero of heroes) { // Create a new element for each of the items in the array, and call each one by this name.
+    console.log(hero);
 }
