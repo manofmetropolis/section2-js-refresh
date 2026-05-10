@@ -151,22 +151,39 @@ console.log(name, age);
 // const age = user.age;
 
 // SPREAD
-const hobbies = ['Drawing', 'Reading', 'Stand Up Comedy', 'Map Collecting'];
-const newHobbies = ['Coin collecting', 'Funny voices', 'Front-end Development'];
-const mergedHobbies = [...hobbies, ...newHobbies]
-console.log(mergedHobbies);
+// const hobbies = ['Drawing', 'Reading', 'Stand Up Comedy', 'Map Collecting'];
+// const newHobbies = ['Coin collecting', 'Funny voices', 'Front-end Development'];
+// const mergedHobbies = [...hobbies, ...newHobbies]
+// console.log(mergedHobbies);
 
-const user = {
-  name: "Rob",
-  age: 43,
-//   greet() {
-//     console.log("Hi.");
-//     console.log(this.age);
-//   },
-};
+// const user = {
+//   name: "Rob",
+//   age: 43,
+// //   greet() {
+// //     console.log("Hi.");
+// //     console.log(this.age);
+// //   },
+// };
 
-const extendedUser = {
-    isAdmin: true,
-    ...user
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user
+// }
+// console.log(extendedUser);
+
+// Control Structures
+if (10 === 10) {
+    console.log('Equal');
+} else {
+    console.log('Not equal');
 }
-console.log(extendedUser);
+
+const password = prompt('Your password');
+
+if (password === 'Superman') {
+    console.log('Welcome')
+} else if (password === 'Luthor') {
+    console.log('Get Out!')
+} else {
+    console.log('Nothing to see here.')
+}
