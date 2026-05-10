@@ -220,12 +220,21 @@
 // greeter(() => console.log('Hi'));
 
 // Define functions inside functions
-function init() {
-    function greet() {
-        console.log('Something');
-    }
+// function init() {
+//     function greet() {
+//         console.log('Something');
+//     }
 
-    greet(); //Cannot exec this function outside of init function.
-}
+//     greet(); //Cannot exec this function outside of init function.
+// }
 
-init();
+// init();
+
+// Reference vs. Primitive Values
+// Primitive values cannot be 'changed.' They are completely discarded and something new is created.
+let userMessage = 'Rob Graff'; // Primitive value
+userMessage = userMessage.concat('!!!');
+
+const heroes = ['Superman', 'Batman', 'Wonder Woman', 'Green Lantern', 'Flash', 'Martian Manhunter'];
+heroes.push("Robin");
+console.log(heroes);
