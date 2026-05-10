@@ -195,3 +195,26 @@ const heroes = ['Superman', 'Batman', 'Wonder Woman', 'Green Lantern', 'Flash', 
 for (const hero of heroes) { // Create a new element for each of the items in the array, and call each one by this name.
     console.log(hero);
 }
+
+// Functions as Values
+// How to pass functions to other functions as values
+
+function handleTimeout() {
+    console.log('Timed out!');
+}
+
+const handleTimeout2 = () => {
+    console.log('Timed out again.');
+}
+
+setTimeout(handleTimeout, 2000); // Params are function and time in message
+setTimeout(handleTimeout2, 3000);
+setTimeout(() => {
+    console.log('Long time out');
+}, 4000);
+
+function greeter(greetFn) {
+    greetFn();
+}
+
+greeter(() => console.log('Hi'));
